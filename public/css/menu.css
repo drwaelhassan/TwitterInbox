@@ -1,0 +1,52 @@
+.menu{
+	width: 260px;
+	padding-top: 10px;
+}
+@keyframes open {
+  from {height: 0; padding: 0 0 0 7px;}
+  to {height: 100%; padding: 7px;}
+}
+
+@keyframes close {
+  0% {height: 100%; padding: 7px;}
+  50% {height: 0; padding: 0;}
+  100% {display: none;}
+}
+
+.open {
+	display: block;
+	animation-name: open;
+	animation-duration: 0.5s;
+}
+
+.close {
+	animation-name: close;
+	animation-duration: 0.5s;	
+}
+
+.for-after::after {
+	font-family: 'LineAwesome';
+    font-size: 1rem;
+    position: absolute;
+    top: 14px;
+    right: 5px;
+    display: inline-block;
+    content: '\f112';
+    transition: -webkit-transform .2s ease-in-out;
+	transform: rotate(0deg);
+}
+.for-after1::after {
+	font-family: 'LineAwesome';
+    font-size: 1rem;
+    position: absolute;
+    top: 14px;
+    right: 5px;
+    display: inline-block;
+    content: '\f112';
+    transition: -webkit-transform .2s ease-in-out;
+	transform: rotate(90deg);
+}
+
+.base-items {
+	display: none;
+}
